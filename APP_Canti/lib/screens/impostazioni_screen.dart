@@ -225,7 +225,7 @@ class _ImpostazioniScreenState extends State<ImpostazioniScreen> {
                     actions: [
                       TextButton(
                         onPressed: () {
-                          _openUrl('https://libretto_canti_digitale.readthedocs.io/it/latest/');
+                          _openUrl('https://libretto-canti-digitale.readthedocs.io/it/latest/');
                         },
                         child: const Text('Apri manuale utente'),
                       ),
