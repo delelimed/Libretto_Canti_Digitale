@@ -1,0 +1,362 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="it" data-content_root="./">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Installazione &mdash; Documentazione Libretto Canti Digitale 1.0 </title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=e59714d7" />
+
+  
+      <script src="_static/jquery.js?v=5d32c60e"></script>
+      <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="_static/documentation_options.js?v=945aedf1"></script>
+      <script src="_static/doctools.js?v=9bcbadda"></script>
+      <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="_static/translations.js?v=45930005"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Indice" href="genindex.html" />
+    <link rel="search" title="Cerca" href="search.html" />
+    <link rel="next" title="Uso dell’App" href="uso.html" />
+    <link rel="prev" title="Introduzione" href="introduzione.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            Libretto Canti Digitale
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Cerca documenti" aria-label="Cerca documenti" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Menu di navigazione">
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="introduzione.html">Introduzione</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Installazione</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#requisiti">Requisiti</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#clonare-il-repository">Clonare il repository</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#preparazione-dei-files">Preparazione dei Files</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#importazione-delle-immagini">Importazione delle immagini</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#importazione-dei-canti">Importazione dei canti</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#gestione-canti">Gestione Canti</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#impostazioni-sito-web">Impostazioni sito web</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#configura-firebase">Configura Firebase</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#creazione-di-un-nuovo-progetto">Creazione di un nuovo progetto</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#configura-firebase-per-la-tua-app">Configura Firebase per la tua app</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#deploy-su-web">Deploy su WEB</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#registra-il-primo-utente-admin">Registra il primo utente (ADMIN)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#registra-gli-utenti-successivi-responsabili-cori">Registra gli utenti successivi (Responsabili Cori)</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="uso.html">Uso dell’App</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Aggiornamenti.html">Aggiornamento dell’Applicazione</a></li>
+<li class="toctree-l1"><a class="reference internal" href="GestioneFeedback.html">Gestione dei Feebdack</a></li>
+<li class="toctree-l1"><a class="reference internal" href="CHANGELOG.html">Changelog</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Menu navigazione dispositivi mobili" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Libretto Canti Digitale</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Naviga tra le pagine">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Installazione</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="installazione">
+<h1>Installazione<a class="headerlink" href="#installazione" title="Link to this heading"></a></h1>
+<p>Questa guida ti aiuta a installare e configurare l’applicazione, personalizzandola in base alle tue esigenze.</p>
+<p>N.B.: per tutti i link riportati, si consiglia di selezionarli con il tasto destro del mouse e di aprirli in una nuova scheda, per non perdere di vista il seguente manuale.</p>
+<section id="requisiti">
+<h2>Requisiti<a class="headerlink" href="#requisiti" title="Link to this heading"></a></h2>
+<p>Assicurati di avere installato:</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://flutter.dev/docs/get-started/install">Flutter</a> (versione stabile consigliata)</p></li>
+<li><p><a class="reference external" href="https://dart.dev/get-dart">Dart</a> (di solito incluso con Flutter)</p></li>
+<li><p><a class="reference external" href="https://firebase.google.com/docs/cli">Firebase CLI</a></p></li>
+<li><p><a class="reference external" href="https://git-scm.com/">Git</a></p></li>
+<li><p>Un editor di codice come <a class="reference external" href="https://code.visualstudio.com/">VS Code</a> o <a class="reference external" href="https://developer.android.com/studio">Android Studio</a> (necessario per generare l’app Android)</p></li>
+</ul>
+</section>
+<section id="clonare-il-repository">
+<h2>Clonare il repository<a class="headerlink" href="#clonare-il-repository" title="Link to this heading"></a></h2>
+<p>Come prima cosa, apri VS Code.
+Apri il terminale e digita:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git<span class="w"> </span>clone<span class="w"> </span>https://github.com/delelimed/Libretto-Canti-Digitale.git
+<span class="nb">cd</span><span class="w"> </span>APP_CantiPSNDB
+<span class="nb">cd</span><span class="w"> </span>canti_psndb
+</pre></div>
+</div>
+<p>Successivamente, installa le dipendenze:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>flutter<span class="w"> </span>pub<span class="w"> </span>get
+</pre></div>
+</div>
+<p>Questo comando scaricherà tutti i plugin e le librerie necessarie.</p>
+<p>Infine, cancella la cartella <code class="docutils literal notranslate"><span class="pre">docs</span></code>, in quanto non necessaria</p>
+</section>
+<hr class="docutils" />
+<section id="preparazione-dei-files">
+<h2>Preparazione dei Files<a class="headerlink" href="#preparazione-dei-files" title="Link to this heading"></a></h2>
+<p>Le operazioni indicate di seguito consentiranno di importare nell’applicazione i files necessari al corretto funzionamento dell’applicazione e per una personalizzazione dell’esperienza utente. Siccome è necessario dover mettere materialmente mano al codice, si invita a seguire queste operazioni in modo scrupoloso.</p>
+<section id="importazione-delle-immagini">
+<h3>Importazione delle immagini<a class="headerlink" href="#importazione-delle-immagini" title="Link to this heading"></a></h3>
+<p>Come prima cosa, recarsi nella posizione <code class="docutils literal notranslate"><span class="pre">assets/images</span></code> ed importare i seguenti files:</p>
+<ul class="simple">
+<li><p><strong>logo.png</strong>, contenente il logo della parrocchia, se posseduto;</p></li>
+<li><p><strong>sfondo.jpg</strong>, contenente l’immagine che verrà raffigurata all’avvio dell’app e come sfondo nella home.</p></li>
+</ul>
+<p>Se si vuole modificare anche l’icona rispetto alla predefinita, recarsi in <code class="docutils literal notranslate"><span class="pre">assets/icon</span></code> e modificare il file <strong>icon.png</strong>.</p>
+</section>
+<section id="importazione-dei-canti">
+<h3>Importazione dei canti<a class="headerlink" href="#importazione-dei-canti" title="Link to this heading"></a></h3>
+<p>E” necessario importare, sottoforma di unico file pdf, il libretto digitale dei canti.
+E” possibile visualizzare il template word da noi realizzato nella cartella «templates» del repository su github, per poterlo eventualmente adattare. A prescindere dallo stile e dal software utilizzato, si consiglia di esportare il PDF in modalità «Pubblicazione Online» / «Minimum Size».</p>
+<p>Dalla stessa cartella, copiare i files <code class="docutils literal notranslate"><span class="pre">canoni_list_template.dart</span></code> e <code class="docutils literal notranslate"><span class="pre">canti_list_template.dart</span></code> nella cartella <code class="docutils literal notranslate"><span class="pre">lib/data</span></code>, rinominandoli in <code class="docutils literal notranslate"><span class="pre">canoni_list.dart</span></code> e <code class="docutils literal notranslate"><span class="pre">canti_list.dart</span></code>. Essi contengono la lista dei canti e dei canoni che verranno successivamente mostrati in applicazione. Si procede con un esempio di <code class="docutils literal notranslate"><span class="pre">canti_list.dart</span></code>:</p>
+<div class="highlight-dart notranslate"><div class="highlight"><pre><span></span><span class="kd">class</span><span class="w"> </span><span class="nc">Canto</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="kd">final</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">numero</span><span class="p">;</span>
+<span class="w">  </span><span class="kd">final</span><span class="w"> </span><span class="kt">String</span><span class="w"> </span><span class="n">titolo</span><span class="p">;</span>
+<span class="w">  </span><span class="kd">final</span><span class="w"> </span><span class="kt">String</span><span class="w"> </span><span class="n">momento1</span><span class="p">;</span>
+<span class="w">  </span><span class="kd">final</span><span class="w"> </span><span class="kt">String</span><span class="o">?</span><span class="w"> </span><span class="n">momento2</span><span class="p">;</span>
+<span class="w">  </span><span class="kd">final</span><span class="w"> </span><span class="kt">String</span><span class="o">?</span><span class="w"> </span><span class="n">momento3</span><span class="p">;</span>
+<span class="w">  </span><span class="kd">final</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">inizioPagina</span><span class="p">;</span>
+<span class="w">  </span><span class="kd">final</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">finePagina</span><span class="p">;</span>
+
+<span class="w">  </span><span class="k">const</span><span class="w"> </span><span class="n">Canto</span><span class="p">({</span>
+<span class="w">    </span><span class="kd">required</span><span class="w"> </span><span class="k">this</span><span class="p">.</span><span class="n">numero</span><span class="p">,</span>
+<span class="w">    </span><span class="kd">required</span><span class="w"> </span><span class="k">this</span><span class="p">.</span><span class="n">titolo</span><span class="p">,</span>
+<span class="w">    </span><span class="kd">required</span><span class="w"> </span><span class="k">this</span><span class="p">.</span><span class="n">momento1</span><span class="p">,</span>
+<span class="w">    </span><span class="k">this</span><span class="p">.</span><span class="n">momento2</span><span class="p">,</span>
+<span class="w">    </span><span class="k">this</span><span class="p">.</span><span class="n">momento3</span><span class="p">,</span>
+<span class="w">    </span><span class="kd">required</span><span class="w"> </span><span class="k">this</span><span class="p">.</span><span class="n">inizioPagina</span><span class="p">,</span>
+<span class="w">    </span><span class="kd">required</span><span class="w"> </span><span class="k">this</span><span class="p">.</span><span class="n">finePagina</span><span class="p">,</span>
+<span class="w">  </span><span class="p">});</span>
+<span class="p">}</span>
+
+<span class="w">  </span><span class="kd">final</span><span class="w"> </span><span class="n">List</span><span class="o">&lt;</span><span class="n">Canto</span><span class="o">&gt;</span><span class="w"> </span><span class="n">canti</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span>
+<span class="w">  </span><span class="n">Canto</span><span class="p">(</span><span class="nl">numero:</span><span class="w"> </span><span class="m">1</span><span class="p">,</span><span class="w"> </span><span class="nl">titolo:</span><span class="w"> </span><span class="s2">&quot;titolo&quot;</span><span class="p">,</span><span class="w"> </span><span class="nl">momento1:</span><span class="w"> </span><span class="s2">&quot;Momento&quot;</span><span class="p">,</span><span class="w"> </span><span class="nl">inizioPagina:</span><span class="w"> </span><span class="m">1</span><span class="p">,</span><span class="w"> </span><span class="nl">finePagina:</span><span class="w"> </span><span class="m">1</span><span class="p">),</span>
+<span class="w">  </span><span class="n">Canto</span><span class="p">(</span><span class="nl">numero:</span><span class="w"> </span><span class="m">2</span><span class="p">,</span><span class="w"> </span><span class="nl">titolo:</span><span class="w"> </span><span class="s2">&quot;titolo&quot;</span><span class="p">,</span><span class="w"> </span><span class="nl">momento1:</span><span class="w"> </span><span class="s2">&quot;UNKNOWN1&quot;</span><span class="p">,</span><span class="w"> </span><span class="nl">momento2:</span><span class="w"> </span><span class="s2">&quot;UNKNOWN2&quot;</span><span class="p">,</span><span class="w"> </span><span class="nl">momento3:</span><span class="w"> </span><span class="s2">&quot;UNKNOWN3&quot;</span><span class="p">,</span><span class="w"> </span><span class="nl">inizioPagina:</span><span class="w"> </span><span class="m">2</span><span class="p">,</span><span class="w"> </span><span class="nl">finePagina:</span><span class="w"> </span><span class="m">2</span><span class="p">),</span><span class="w"> </span>
+<span class="w">  </span><span class="p">]</span>
+<span class="w">  </span>
+</pre></div>
+</div>
+<p>Del primo blocco (<code class="docutils literal notranslate"><span class="pre">class</span> <span class="pre">Canto</span></code> e <code class="docutils literal notranslate"><span class="pre">const</span> <span class="pre">Canto</span></code>) non è necessario preoccuparsi. La lista successiva (<code class="docutils literal notranslate"><span class="pre">final</span> <span class="pre">List&lt;Canto&gt;</span> <span class="pre">canti</span> <span class="pre">...</span></code>) contiene la dichiarazione di tutti i canti inseriti a libretto. In particolare:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">numero</span></code>: contiene il numero progressivo del canto. Campo obbligatorio;</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">titolo</span></code>: contiene il titolo del canto. Campo obbligatorio;</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">momentox</span></code>: 1&lt;=x&lt;=3. Il <code class="docutils literal notranslate"><span class="pre">momento1</span></code> è obbligatorio, <code class="docutils literal notranslate"><span class="pre">momento2</span></code> e <code class="docutils literal notranslate"><span class="pre">momento3</span></code> sono facoltativi (e possono essere aggiunti o rimossi dal codice). Vedi il capitolo «Gestione Canti» per informazioni su come gestire i momenti;</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">inizioPagina</span></code>: il numero di pagina del PDF in cui inizia il canto. Può coincidere con <code class="docutils literal notranslate"><span class="pre">finePagina</span></code>;</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">finePagina</span></code>: numero di pagina del PDF in cui il canto finisce. Può coincidere con <code class="docutils literal notranslate"><span class="pre">inizioPagina</span></code>.</p></li>
+</ul>
+<hr class="docutils" />
+<section id="gestione-canti">
+<h4>Gestione Canti<a class="headerlink" href="#gestione-canti" title="Link to this heading"></a></h4>
+<p>La presente webapp supporta solamente i seguenti momenti liturgici, impostabili ai canti (in numero massimo di 3 per canto), per facilitare la ricerca degli stessi:</p>
+<ul class="simple">
+<li><p>Ingresso;</p></li>
+<li><p>Gloria;</p></li>
+<li><p>Alleluia;</p></li>
+<li><p>Offertorio;</p></li>
+<li><p>Comunione;</p></li>
+<li><p>Congedo;</p></li>
+<li><p>Momenti di Preghiera;</p></li>
+<li><p>Natale;</p></li>
+<li><p>Pasqua;</p></li>
+<li><p>Canone (in file apposito <code class="docutils literal notranslate"><span class="pre">canoni_list.dart</span></code>).</p></li>
+</ul>
+</section>
+</section>
+<hr class="docutils" />
+<section id="impostazioni-sito-web">
+<h3>Impostazioni sito web<a class="headerlink" href="#impostazioni-sito-web" title="Link to this heading"></a></h3>
+<p>E” possibile impostare il download del PDF del libro dei canti dal proprio sito web parrocchiale.
+Aprire il file <code class="docutils literal notranslate"><span class="pre">lib/screens/home_screen.dart</span></code> e recarsi alla riga 254, dove è possibile inserire il link al file PDF sul proprio sito web (o da uno spazio google drive). Se non si utilizza questa funzione, è possibile eliminare il pulsante cancellando le righe 252 - 254.</p>
+</section>
+</section>
+<hr class="docutils" />
+<section id="configura-firebase">
+<h2>Configura Firebase<a class="headerlink" href="#configura-firebase" title="Link to this heading"></a></h2>
+<p>Firebase è una piattaforma di sviluppo di applicazioni mobili e web fornita da Google. Offre una vasta gamma di servizi backend come un database in tempo reale (Firestore), autenticazione utente, hosting statico, cloud functions, analisi, e altro ancora, permettendo agli sviluppatori di concentrarsi sulla creazione delle esperienze utente senza dover gestire l’infrastruttura del server. È particolarmente popolare nello sviluppo Flutter grazie alla sua facile integrazione.</p>
+<section id="creazione-di-un-nuovo-progetto">
+<h3>Creazione di un nuovo progetto<a class="headerlink" href="#creazione-di-un-nuovo-progetto" title="Link to this heading"></a></h3>
+<p>Per integrare i servizi backend nell’applicazione, è necessario creare un nuovo progetto nella console di Firebase:</p>
+<ol class="arabic simple">
+<li><p><strong>Accedi alla Consolle</strong>: Vai alla <a class="reference external" href="https://console.firebase.google.com/">Console di Firebase</a> ed effettua l’accesso con il tuo account Google (importante: siccome l’accesso alla console consente la visualizzazione e gestione di informazioni «sensibili» per l’applicazione, è conveniente che colui il quale configura firebase sia il responsabile designato alla gestione del coro, o eventualmente delle infrastrutture informatiche della parrocchia).</p></li>
+<li><p><strong>Crea un Progetto</strong>:</p>
+<ul class="simple">
+<li><p>Fai clic su «<strong>Aggiungi Progetto</strong>»;</p></li>
+<li><p><strong>Inserisci un nome</strong> al progetto (ex: app-canti). Questo nome è visibile solo a te;</p></li>
+<li><p><strong>Google Analytics</strong>: Scegli se abilitare o meno Google Analytics per il tuo progetto. Nella versione originale, esso è abilitato;</p></li>
+<li><p><strong>Configura Analytics</strong>: Se hai abilitato Analytics, seleziona o crea un account Google Analytics e la regione del database (consiglio: TORINO);</p></li>
+<li><p>Fai clic su «<strong>Crea Progetto</strong>».</p></li>
+</ul>
+</li>
+</ol>
+</section>
+<section id="configura-firebase-per-la-tua-app">
+<h3>Configura Firebase per la tua app<a class="headerlink" href="#configura-firebase-per-la-tua-app" title="Link to this heading"></a></h3>
+<ul class="simple">
+<li><p>Installa <strong>Firebase CLI</strong></p></li>
+</ul>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>npm<span class="w"> </span>install<span class="w"> </span>-g<span class="w"> </span>firebase-tools
+</pre></div>
+</div>
+<ul class="simple">
+<li><p>Accedi al tuo account firebase:</p></li>
+</ul>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>firebase<span class="w"> </span>login
+</pre></div>
+</div>
+<p>Segui ora la procedura indicata nel browser web. Al termine del processo, dovresti notare una scritta nel terminale che avvisa dell’avvenuto login.</p>
+<ul class="simple">
+<li><p>Inizializza il progetto Firebase:
+assicurati di trovarti con il terminale nella cartella principale del progetto (la riconosci dalla presenza del file «pubspec.yaml»):</p></li>
+</ul>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>firebase<span class="w"> </span>init
+</pre></div>
+</div>
+<p>Ti chiede conferma, inserisci <code class="docutils literal notranslate"><span class="pre">Y</span></code> e premi invio.
+Durante questa procedura, seleiona muovendoti con le frecce e selezionando con la barra spaziatrice i seguenti servizi da abilitare:
+- Firestore
+- Remote Config
+- Hosting
+Al termine, premi ENTER</p>
+<ul class="simple">
+<li><p>Seleziona il progetto creato precedentemente;</p></li>
+<li><p>Alla richiesta <code class="docutils literal notranslate"><span class="pre">What</span> <span class="pre">file</span> <span class="pre">should</span> <span class="pre">be</span> <span class="pre">used</span> <span class="pre">for</span> <span class="pre">Firestore</span> <span class="pre">Rules?</span></code> premere semplicemente <code class="docutils literal notranslate"><span class="pre">ENTER</span></code>;</p></li>
+<li><p>Alla richiesta <code class="docutils literal notranslate"><span class="pre">What</span> <span class="pre">file</span> <span class="pre">should</span> <span class="pre">be</span> <span class="pre">used</span> <span class="pre">for</span> <span class="pre">Firestore</span> <span class="pre">indexes?</span></code> premere semplicemente <code class="docutils literal notranslate"><span class="pre">ENTER</span></code>;</p></li>
+<li><p>Alla richiesta <code class="docutils literal notranslate"><span class="pre">What</span> <span class="pre">do</span> <span class="pre">you</span> <span class="pre">want</span> <span class="pre">to</span> <span class="pre">use</span> <span class="pre">as</span> <span class="pre">your</span> <span class="pre">public</span> <span class="pre">directory?</span></code> inserire <code class="docutils literal notranslate"><span class="pre">build/web</span></code> e premere <code class="docutils literal notranslate"><span class="pre">ENTER</span></code>;</p></li>
+<li><p>Alla richiesta <code class="docutils literal notranslate"><span class="pre">Configure</span> <span class="pre">as</span> <span class="pre">a</span> <span class="pre">single-page</span> <span class="pre">app</span> <span class="pre">(rewrite</span> <span class="pre">all</span> <span class="pre">urls</span> <span class="pre">to</span> <span class="pre">/index.html)?</span></code> inserire <code class="docutils literal notranslate"><span class="pre">Y</span></code> e premere <code class="docutils literal notranslate"><span class="pre">ENTER</span></code>;</p></li>
+<li><p>Alla richiesta <code class="docutils literal notranslate"><span class="pre">Set</span> <span class="pre">up</span> <span class="pre">automatic</span> <span class="pre">builds</span> <span class="pre">and</span> <span class="pre">deploys</span> <span class="pre">with</span> <span class="pre">GitHub?</span></code> inserire <code class="docutils literal notranslate"><span class="pre">n</span></code> e premere <code class="docutils literal notranslate"><span class="pre">ENTER</span></code>;</p></li>
+<li><p>Alla richiesta <code class="docutils literal notranslate"><span class="pre">What</span> <span class="pre">file</span> <span class="pre">should</span> <span class="pre">be</span> <span class="pre">used</span> <span class="pre">for</span> <span class="pre">your</span> <span class="pre">Remote</span> <span class="pre">Config</span> <span class="pre">template?</span></code> premere <code class="docutils literal notranslate"><span class="pre">ENTER</span></code>.</p></li>
+</ul>
+<p>L’inizializzazione di Firebase è ora completata.</p>
+</section>
+</section>
+<section id="deploy-su-web">
+<h2>Deploy su WEB<a class="headerlink" href="#deploy-su-web" title="Link to this heading"></a></h2>
+<p>Dopo aver configurato correttamente l’applicazione, è arrivato il momento di caricarla sul web per renderla accessibile pubblicamente. Come prima cosa, abilita la piattaforma web da terminale:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>flutter<span class="w"> </span>config<span class="w"> </span>--enable-web
+flutter<span class="w"> </span>devices
+</pre></div>
+</div>
+<p>Dovresti ora vedere un dispositivo come questi:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>Chrome<span class="w"> </span><span class="o">(</span>web<span class="o">)</span><span class="w"> </span>•<span class="w"> </span>chrome<span class="w"> </span>•<span class="w"> </span>web-javascript
+</pre></div>
+</div>
+<p>Compila l’app per il web e caricali su firebase:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>flutter<span class="w"> </span>build<span class="w"> </span>web<span class="w"> </span>--release
+firebase<span class="w"> </span>deploy<span class="w"> </span>--only<span class="w"> </span>hosting
+</pre></div>
+</div>
+<p>Al termine, comparirà un avviso come il seguente, con il link per raggiungere la webapp:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>✔<span class="w">  </span>Deploy<span class="w"> </span>complete!
+
+Project<span class="w"> </span>Console:<span class="w"> </span>https://console.firebase.google.com/project/&lt;tuo-progetto&gt;
+Hosting<span class="w"> </span>URL:<span class="w"> </span>https://&lt;tuo-progetto&gt;.web.app
+</pre></div>
+</div>
+</section>
+<section id="registra-il-primo-utente-admin">
+<h2>Registra il primo utente (ADMIN)<a class="headerlink" href="#registra-il-primo-utente-admin" title="Link to this heading"></a></h2>
+<p>La seguente procedura è necessaria alla creazione di un account di amministratore, che avrà pieni privilegi sull’app.</p>
+<blockquote>
+<div><p>N.B. Esistono due tipi di utente in questa app. La prima è Admin, e consente di inserire tutti gli utenti dell’app. La seconda è «Utente Normale», idealmente riservata ai responsabili dei cori, e consente di inserire tutte le celebrazioni liturgiche. Di seguito è mostrata la procedura per inserire gli amministratori. NON è prevista la registrazione per i fedeli.</p>
+</div></blockquote>
+<ul class="simple">
+<li><p>Recati nella <a class="reference external" href="https://console.firebase.google.com/">Console di Firebase</a> e seleziona il progetto dell’app.</p></li>
+<li><p>Sulla sinistra, dal menù <code class="docutils literal notranslate"><span class="pre">BUILD</span></code>, seleziona <code class="docutils literal notranslate"><span class="pre">Authentication</span></code>;</p></li>
+<li><p>Seleziona <code class="docutils literal notranslate"><span class="pre">Email/Password</span></code> e <code class="docutils literal notranslate"><span class="pre">Google</span></code> (se non le trovi, vai su <code class="docutils literal notranslate"><span class="pre">Sign-in</span> <span class="pre">Method</span></code>);</p></li>
+<li><p>Seleziona <code class="docutils literal notranslate"><span class="pre">Add</span> <span class="pre">user</span></code> ed inserisci una coppia di username e password per l’amministratore;</p></li>
+<li><p>Accedi all’App tramite il link generato nella parte precedente;</p></li>
+<li><p>Inserisci Nome, Cognome e Password (opzionale, modifica quella di default inserita);</p></li>
+<li><p>Appare la schermata di gestione celebrazioni. Si consiglia di tornare indietro e fare nuovamente login per abilitare tutte le funzioni dedicate al coro;</p></li>
+<li><p>Recarsi su <code class="docutils literal notranslate"><span class="pre">BUILD</span></code> - <code class="docutils literal notranslate"><span class="pre">Firestore</span> <span class="pre">Database</span></code> - <code class="docutils literal notranslate"><span class="pre">coro_users</span></code>. Compaiono tutti gli utenti registrati. Trovare l’utente da rendere admin, selezionare <code class="docutils literal notranslate"><span class="pre">Add</span> <span class="pre">field</span></code> - inserire <code class="docutils literal notranslate"><span class="pre">isAdmin</span></code> - Type <code class="docutils literal notranslate"><span class="pre">boolean</span></code> - <code class="docutils literal notranslate"><span class="pre">true</span></code>. Salvare.</p></li>
+</ul>
+</section>
+<section id="registra-gli-utenti-successivi-responsabili-cori">
+<h2>Registra gli utenti successivi (Responsabili Cori)<a class="headerlink" href="#registra-gli-utenti-successivi-responsabili-cori" title="Link to this heading"></a></h2>
+<ul class="simple">
+<li><p>Recati nella <a class="reference external" href="https://console.firebase.google.com/">Console di Firebase</a> e seleziona il progetto dell’app.</p></li>
+<li><p>Sulla sinistra, dal menù <code class="docutils literal notranslate"><span class="pre">BUILD</span></code>, seleziona <code class="docutils literal notranslate"><span class="pre">Authentication</span></code>;</p></li>
+<li><p>Recati su <code class="docutils literal notranslate"><span class="pre">Settings</span></code> - <code class="docutils literal notranslate"><span class="pre">User</span> <span class="pre">action</span></code>;</p></li>
+<li><p>Abilita la voce <code class="docutils literal notranslate"><span class="pre">Enable</span> <span class="pre">create</span> <span class="pre">(sign-up)</span></code> e seleziona <code class="docutils literal notranslate"><span class="pre">Save</span></code>.</p></li>
+<li><p>Mediante un utente amministratore, entrare in app mediante il link generato sopra, selezionare <code class="docutils literal notranslate"><span class="pre">IMPOSTAZIONI</span></code> - <code class="docutils literal notranslate"><span class="pre">Utenti</span></code> - selezionare il tasto <code class="docutils literal notranslate"><span class="pre">+</span></code> in alto a destra;</p></li>
+<li><p>Compilare con tutte le voci necessarie;</p></li>
+<li><p>Premere <code class="docutils literal notranslate"><span class="pre">Aggiungi</span></code>.</p></li>
+</ul>
+<p>Questa procedura è ripetibile per tutti gli utenti da associare.
+Dopo aver inserito tutti gli utenti:</p>
+<ul class="simple">
+<li><p>Recati nella <a class="reference external" href="https://console.firebase.google.com/">Console di Firebase</a> e seleziona il progetto dell’app.</p></li>
+<li><p>Sulla sinistra, dal menù <code class="docutils literal notranslate"><span class="pre">BUILD</span></code>, seleziona <code class="docutils literal notranslate"><span class="pre">Authentication</span></code>;</p></li>
+<li><p>Recati su <code class="docutils literal notranslate"><span class="pre">Settings</span></code> - <code class="docutils literal notranslate"><span class="pre">User</span> <span class="pre">action</span></code>;</p></li>
+<li><p>Disabilita la voce <code class="docutils literal notranslate"><span class="pre">Enable</span> <span class="pre">create</span> <span class="pre">(sign-up)</span></code> e seleziona <code class="docutils literal notranslate"><span class="pre">Save</span></code>.</p></li>
+</ul>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Piè di pagina">
+        <a href="introduzione.html" class="btn btn-neutral float-left" title="Introduzione" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Precedente</a>
+        <a href="uso.html" class="btn btn-neutral float-right" title="Uso dell’App" accesskey="n" rel="next">Prossimo <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2025, DELELIMED.</p>
+  </div>
+
+  Realizzato con <a href="https://www.sphinx-doc.org/">Sphinx</a> usando un
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">tema</a>
+    fornito da <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

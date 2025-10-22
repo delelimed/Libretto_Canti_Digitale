@@ -1,0 +1,35 @@
+Copyright (c) 2025 DELELIMED
+
+This software and associated documentation files (the “Software”) are made available under the terms specified in the LICENSE file.
+
+---
+
+This project was ideated, designed, and coordinated by:
+  - DELELIMED (Author and Maintainer)
+
+Parts of the source code were developed with the assistance of AI tools
+such as OpenAI ChatGPT and GitHub Copilot. These tools were used to
+accelerate development and support implementation, but the overall
+architecture, concept, and integration design remain original works by
+the author.
+
+---
+
+Project repository:
+  https://github.com/delelimed/APP_CantiPSNDB
+
+Full documentation:
+  Available in the "docs/" directory or online at:
+  aaaaaaa
+
+---
+
+Attribution:
+  Redistribution and use of this code, with or without modification,
+  must retain this NOTICE file and the LICENSE file.
+  Any fork or derivative work must preserve author attribution
+  and documentation links.
+
+---
+
+Third-party dependencies and libraries are governed by their respective licenses.

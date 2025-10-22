@@ -1,0 +1,18 @@
+{
+    "name": "Libretto Canti",
+    "short_name": "Libretto Canti",
+    "start_url": ".",
+    "display": "standalone",
+    "background_color": "#0175C2",
+    "theme_color": "#0175C2",
+    "description": "Libretto digitale per i canti della parrocchia San Nicola da Bari.",
+    "orientation": "portrait-primary",
+    "prefer_related_applications": false,
+    "icons": [
+        {
+            "src": "icons/favicon-96x96.png",
+            "sizes": "96x96",
+            "type": "image/png"
+        }
+    ]
+}

@@ -1,0 +1,3 @@
+# Gestione dei Feebdack
+
+Nella sezione IMPOSTAZIONI dell'app è presente una sezione Feedback, in cui tutti gli utenti possono inserire un bug o inviare un suggerimento / commento globale. Tutti gli input degli utenti sono visualizzabili solamente dall'amministratore. Si consiglia, in caso di ricezione di segnalazione bug o di suggerimento globale (che esuli dai semplici errori di testo), di aprire una issue su github per inserire le segnalazioni, che saranno eventualmente valutate per le successive versioni dell'app. Grazie.
