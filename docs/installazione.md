@@ -136,9 +136,9 @@ APP_Canti/
       |
       └─ canti_per_app.pdf
 |
-└─ lib
+└─ lib/
     |
-    └─ data
+    └─ data/
         |
         └─ canoni_list.dart
         └─ canti_list.dart

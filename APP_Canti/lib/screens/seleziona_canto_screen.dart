@@ -65,10 +65,13 @@ class _SelezionaCantoScreenState extends State<SelezionaCantoScreen> {
     final allItems = <dynamic>[...canti, ...canoni];
 
     final filteredItems = allItems.where((item) {
-      final titleMatch = item.titolo.toLowerCase().contains(query.toLowerCase());
-      final numeroStr = item.numero.toString();
+      final queryLower = query.toLowerCase();
+      final titleMatch = item.titolo.toLowerCase().contains(queryLower);
+      final numberMatch = item.numero.toString().contains(queryLower);
 
-      if (mostraSoloPreferiti && !preferiti.contains(numeroStr)) return false;
+      if (mostraSoloPreferiti && !preferiti.contains(item.numero.toString())) {
+        return false;
+      }
 
       if (item is! Canto) {
         return titleMatch &&
@@ -80,7 +83,7 @@ class _SelezionaCantoScreenState extends State<SelezionaCantoScreen> {
           (item.momento2 != null && item.momento2 == momentoSelezionato) ||
           (item.momento3 != null && item.momento3 == momentoSelezionato);
 
-      return titleMatch && momentMatch;
+      return (titleMatch || numberMatch) && momentMatch;
     }).toList();
 
     return Scaffold(
@@ -116,7 +119,7 @@ class _SelezionaCantoScreenState extends State<SelezionaCantoScreen> {
             padding: const EdgeInsets.all(12.0),
             child: TextField(
               decoration: const InputDecoration(
-                labelText: 'Cerca per titolo',
+                labelText: 'Cerca per titolo o numero',
                 border: OutlineInputBorder(),
                 prefixIcon: Icon(Icons.search),
               ),
@@ -247,3 +250,4 @@ class _SelezionaCantoScreenState extends State<SelezionaCantoScreen> {
     );
   }
 }
+

@@ -49,7 +49,13 @@ class _SearchCantiScreenState extends State<SearchCantiScreen> {
     ];
 
     final filteredCanti = allItems.where((item) {
-      final titleMatch = item.titolo.toLowerCase().contains(query.toLowerCase());
+      final queryLower = query.toLowerCase();
+
+      // Controllo titolo
+      final titleMatch = item.titolo.toLowerCase().contains(queryLower);
+
+      // Controllo numero (solo per i canti)
+      final numberMatch = (item is Canto) && item.numero.toString().contains(queryLower);
 
       // Canone: momento fisso "Canone"
       if (item is! Canto) {
@@ -62,7 +68,8 @@ class _SearchCantiScreenState extends State<SearchCantiScreen> {
           (item.momento2 != null && item.momento2 == momentoSelezionato) ||
           (item.momento3 != null && item.momento3 == momentoSelezionato);
 
-      return titleMatch && momentMatch;
+      // Restituisce true se titolo o numero corrispondono, e il momento corrisponde
+      return (titleMatch || numberMatch) && momentMatch;
     }).toList();
 
     return Scaffold(
@@ -85,7 +92,7 @@ class _SearchCantiScreenState extends State<SearchCantiScreen> {
               onChanged: (value) => setState(() => query = value),
               decoration: InputDecoration(
                 prefixIcon: const Icon(Icons.search),
-                hintText: 'Inserisci il titolo del canto...',
+                hintText: 'Inserisci il titolo o il numero del canto...',
                 border: OutlineInputBorder(
                   borderRadius: BorderRadius.circular(12),
                 ),
