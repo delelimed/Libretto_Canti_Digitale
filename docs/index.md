@@ -8,5 +8,6 @@ installazione
 uso
 Aggiornamenti
 GestioneFeedback
+LICENSE
 CHANGELOG
 

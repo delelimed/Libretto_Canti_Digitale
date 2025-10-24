@@ -52,7 +52,7 @@ Se si vuole modificare anche l'icona rispetto alla predefinita, recarsi in `asse
 ### Importazione dei canti
 
 E' necessario importare, sottoforma di unico file pdf, il libretto digitale dei canti.
-E' possibile visualizzare il template word da noi realizzato nella cartella "templates" del repository su github, per poterlo eventualmente adattare. A prescindere dallo stile e dal software utilizzato, si consiglia di esportare il PDF in modalità "Pubblicazione Online" / "Minimum Size".
+E' possibile visualizzare il template word da noi realizzato nella cartella "templates" del repository su github, per poterlo eventualmente adattare. A prescindere dallo stile e dal software utilizzato, si consiglia di esportare il PDF in modalità "Pubblicazione Online" / "Minimum Size". Il file cos' generato deve necessariamente essere nominato `canti_per_app.pdf`, da posizionare nella cartella `assets`.
 
 Dalla stessa cartella, copiare i files `canoni_list_template.dart` e `canti_list_template.dart` nella cartella `lib/data`, rinominandoli in `canoni_list.dart` e `canti_list.dart`. Essi contengono la lista dei canti e dei canoni che verranno successivamente mostrati in applicazione. Si procede con un esempio di `canti_list.dart`:
 
@@ -112,6 +112,36 @@ La presente webapp supporta solamente i seguenti momenti liturgici, impostabili 
 ### Impostazioni sito web
 E' possibile impostare il download del PDF del libro dei canti dal proprio sito web parrocchiale. 
 Aprire il file `lib/screens/home_screen.dart` e recarsi alla riga 254, dove è possibile inserire il link al file PDF sul proprio sito web (o da uno spazio google drive). Se non si utilizza questa funzione, è possibile eliminare il pulsante cancellando le righe 252 - 254.
+
+---
+
+### Schema Finale dei files
+
+Di seguito si illustra l'organizzazione dei files modificati che dovrai avere prima di passare alla fase successiva. Le cartelle (`assets/`) sono indicate postponendo lo slash. Non si mostrano i files non oggetto di modifica:
+
+```text
+APP_Canti/
+|
+└─ assets/
+      |
+      └─ icon/
+          |
+          └─ icon.png
+      |
+      └─ images/
+          |
+          └─ logo.png
+          └─ sfondo.png
+      |
+      └─ canti_per_app.pdf
+|
+└─ lib
+    |
+    └─ data
+        |
+        └─ canoni_list.dart
+        └─ canti_list.dart
+```
 
 ---
 

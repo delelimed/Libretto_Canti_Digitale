@@ -9,6 +9,8 @@ import 'home_screen.dart';
 import 'statistiche_screen.dart';
 import 'utenti_screen.dart';
 import 'gestione_calendario_screen.dart';
+import 'licenza_screen.dart';
+
 
 class ImpostazioniScreen extends StatefulWidget {
   const ImpostazioniScreen({super.key});
@@ -214,7 +216,6 @@ class _ImpostazioniScreenState extends State<ImpostazioniScreen> {
               title: const Text('Versioni'),
               subtitle: const Text(
                 'Versione applicazione: 20251019\n'
-                'Versione libro dei canti: 20251019',
               ),
               onTap: () {
                 showDialog(
@@ -235,6 +236,17 @@ class _ImpostazioniScreenState extends State<ImpostazioniScreen> {
                         },
                         child: const Text('Apri GitHub'),
                       ),
+                      TextButton(
+                        onPressed: () {
+                          Navigator.pop(context); // Chiude il dialog
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(builder: (_) => const LicenzaScreen()),
+                          );
+                        },
+                        child: const Text('Visualizza licenza'),
+                      ),
+
                       TextButton(
                         onPressed: () => Navigator.pop(context),
                         child: const Text('Chiudi'),
