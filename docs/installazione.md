@@ -10,6 +10,7 @@ Assicurati di avere installato:
 
 - [Flutter](https://flutter.dev/docs/get-started/install) (versione stabile consigliata)
 - [Dart](https://dart.dev/get-dart) (di solito incluso con Flutter)
+- [Node.js](https://nodejs.org/en/download) e Chocolatey
 - [Firebase CLI](https://firebase.google.com/docs/cli)
 - [Git](https://git-scm.com/)
 - Un editor di codice come [VS Code](https://code.visualstudio.com/) o [Android Studio](https://developer.android.com/studio) (necessario per generare l'app Android)
@@ -20,8 +21,8 @@ Apri il terminale e digita:
 
 ```bash
 git clone https://github.com/delelimed/Libretto-Canti-Digitale.git
-cd APP_CantiPSNDB
-cd canti_psndb
+cd Libretto_Canti_Digitale
+cd APP_Canti
 ```
 
 Successivamente, installa le dipendenze:
