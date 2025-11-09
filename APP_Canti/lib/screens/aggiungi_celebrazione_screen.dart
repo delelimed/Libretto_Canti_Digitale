@@ -28,6 +28,7 @@ class _AggiungiCelebrazioneScreenState extends State<AggiungiCelebrazioneScreen>
     'Gloria': {'numero': null, 'titolo': null},
     'Alleluia': {'numero': null, 'titolo': null},
     'Offertorio': {'numero': null, 'titolo': null},
+    'Santo': {'numero': null, 'titolo': null},
     'Comunione': {'numero': null, 'titolo': null},
     'Congedo': {'numero': null, 'titolo': null},
   };

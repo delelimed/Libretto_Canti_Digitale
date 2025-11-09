@@ -57,6 +57,7 @@ class CelebrazioneScreen extends StatelessWidget {
         'Gloria',
         'Alleluia',
         'Offertorio',
+        'Santo',
         'Comunione',
         'Congedo',
       ];

@@ -197,6 +197,7 @@ class _SelezionaCantoScreenState extends State<SelezionaCantoScreen> {
       'Gloria',
       'Alleluia',
       'Offertorio',
+      'Santo',
       'Comunione',
       'Congedo',
       'Canone',

@@ -33,6 +33,7 @@ class _SearchCantiScreenState extends State<SearchCantiScreen> {
     'Gloria',
     'Alleluia',
     'Offertorio',
+    'Santo',
     'Comunione',
     'Congedo',
     'Canone',

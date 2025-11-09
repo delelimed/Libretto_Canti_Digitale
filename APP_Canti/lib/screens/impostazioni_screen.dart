@@ -215,7 +215,7 @@ class _ImpostazioniScreenState extends State<ImpostazioniScreen> {
               leading: const Icon(Icons.info, color: Colors.indigo),
               title: const Text('Versioni'),
               subtitle: const Text(
-                'Versione applicazione: 20251019\n'
+                'Versione applicazione: 20251109\n'
               ),
               onTap: () {
                 showDialog(

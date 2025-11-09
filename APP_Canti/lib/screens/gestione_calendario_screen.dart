@@ -94,6 +94,7 @@ class _GestioneCalendarioScreenState extends State<GestioneCalendarioScreen> {
       'Gloria',
       'Alleluia',
       'Offertorio',
+      'Santo',
       'Comunione',
       'Congedo',
     ];
